@@ -32,7 +32,7 @@ const Header = () => {
               <img 
                 width="50"
                 height="50"
-                src="https://img.icons8.com/glyph-neue/40/shopping-cart.png"
+                src="https://img.icons8.com/glyph-neue/50/shopping-cart.png"
                 alt="shopping-cart"
               />
               {cartItems.length > 0 && (
