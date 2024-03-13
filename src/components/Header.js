@@ -19,7 +19,7 @@ const Header = () => {
             <Link to="/">
               <img
                 width="50"
-                height="40"
+                height="50"
                 src="https://img.icons8.com/ios-filled/50/home.png"
                 alt="home"
               />
@@ -27,12 +27,12 @@ const Header = () => {
           </li>
         </ul>
         {cartItems.length !== 0 ? (
-          <li className="mx-2 mt-1 p-2 relative">
+          <div className="mx-2 mt-1 mb-1 p-2 relative">
             <Link to="/cart" className="flex items-center">
-              <img
+              <img 
                 width="50"
                 height="50"
-                src="https://img.icons8.com/glyph-neue/64/shopping-cart.png"
+                src="https://img.icons8.com/glyph-neue/40/shopping-cart.png"
                 alt="shopping-cart"
               />
               {cartItems.length > 0 && (
@@ -41,9 +41,9 @@ const Header = () => {
                 </span>
               )}
             </Link>
-          </li>
+          </div>
         ) : (
-          <li className="mx-2 mt-1 p-2 text-xl ">
+          <div className="mx-2 mt-1 p-2 text-xl ">
             <Link to="/cart">
               <img
                 width="50"
@@ -52,7 +52,7 @@ const Header = () => {
                 alt="shopping-cart"
               />
             </Link>
-          </li>
+          </div>
         )}
 
         <p>{isOnline ? "💚" : "💖"}</p>
