@@ -7,7 +7,9 @@ const ShowMenu = ({menu}) => {
   const handle = (item) => {
     dispatch(addItem(item));
   };
-
+  const deleteItem=(item)=>{
+    dispatch(removeItem(item))
+  }
   return (
     <>
       {menu
@@ -24,12 +26,12 @@ const ShowMenu = ({menu}) => {
               >
                 +
               </button>
-              {/* <button
+              <button
                 className="m-2 py-1 px-3 border-2 border-solid border-white-500 rounded-md text-white"
                 onClick={() => deleteItem(filteredElem?.card?.info)}
               >
                 -
-              </button> */}
+              </button>
             </div>
             <div className="flex flex-col items-center justify-around">
               <img

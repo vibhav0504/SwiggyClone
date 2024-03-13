@@ -8,8 +8,8 @@ const Header = () => {
   const isOnline = useOnline();
   const cartItems = useSelector((store) => store.cart.item);
   const { user, loginWithRedirect, isAuthenticated, logout } = useAuth0();
-  console.log(user);
-  console.log(isAuthenticated);
+  // console.log(user);
+  // console.log(isAuthenticated);
   return (
     <>
       <div className="flex justify-between bg-red-400 items-center ">
