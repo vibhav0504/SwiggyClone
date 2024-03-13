@@ -14,8 +14,8 @@ const Header = () => {
     <>
       <div className="flex justify-between bg-red-400 items-center ">
         <img src={logo} className="h-28 p-2 rounded-full " />
-        <ul className="p-2 m-2  font-serif">
-          <li className="m-2 p-2 text-xl">
+        
+          <div className="m-2 p-2 text-xl">
             <Link to="/">
               <img
                 width="50"
@@ -24,8 +24,8 @@ const Header = () => {
                 alt="home"
               />
             </Link>
-          </li>
-        </ul>
+          </div>
+       
         {cartItems.length !== 0 ? (
           <div className="mx-2 mt-1 mb-1 p-2 relative">
             <Link to="/cart" className="flex items-center">
